@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to travel Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Sriracha' rel='stylesheet'>
+
+<body>
+    <img class ="collegeimg" src="collegeimg.jpeg" alt="Galgotia College">
+    <div class="container">
+        <h1>Welcome to Galgotia college US Trip form</h1>
+
+        <p>Enter your details and submit your 
+        form to conform your participation in the trip</p>
+
+        <p class="submitMsg">Thanks for submitting your form .
+             We are happi to see you joining us for the US trip</p>
+             
+        <form action="index.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your good name...">
+            <input type="text" name="age" id="age" placeholder="Enter your age...">
+            <input type="text" name="gender" id="gender" placeholder="Enter your Gender...">
+            <input type="phone" name="phone" id="phone" placeholder="Enter your phone number...">
+            <input type="email" name="email" id="email" placeholder="Enter your mail id...">
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <button class="btn">Submit</button>
+            <!--INSERT INTO `trip` (`sno`, `name`, `age`, `gender`, `contact`, `emailid`, `other`, `dt`)
+             VALUES ('1', 'testname', '21', 'male', '9355667788', 'hs.1512150@gmail.com', 'this will be amazing trip!', current_timestamp());-->
+
+        </form>
+        
+    </div>
+    <script src="index.js"> </script>
+    
+</body>
+</html>
